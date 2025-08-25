@@ -1,4 +1,4 @@
-public class Triangle implements GeometricFigures{
+public class Triangle implements GeometricFigures {
     private double sideA;
     private double sideB;
     private double sideC;
@@ -17,15 +17,18 @@ public class Triangle implements GeometricFigures{
     public double calculatePerimeter() {
         return sideA + sideB + sideC;
     }
+
     @Override
     public double calculateArea() {
         double p = calculatePerimeter() / 2;
-        return Math.sqrt(p * (p -sideA) * (p - sideB) * (p - sideC));
+        return Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
     }
+
     @Override
     public String getFillColor() {
         return fillColor;
     }
+
     @Override
     public String getBorderColor() {
         return borderColor;

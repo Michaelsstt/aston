@@ -43,8 +43,8 @@ public class Main {
 
         //2
         Circle circle = new Circle(6, "red", "blue");
-        Rectangle rectangle = new Rectangle(5.0,7, "red", "white");
-        Triangle triangle = new Triangle(3,4,4, "green", "black");
+        Rectangle rectangle = new Rectangle(5.0, 7, "red", "white");
+        Triangle triangle = new Triangle(3, 4, 4, "green", "black");
 
         System.out.println("круг:");
         circle.printInfo();

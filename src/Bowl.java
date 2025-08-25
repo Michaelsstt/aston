@@ -8,11 +8,13 @@ public class Bowl {
     public int getFoodAmount() {
         return foodAmount;
     }
+
     public void decreaseFood(int amount) {
         if (amount <= foodAmount) {
             foodAmount -= amount;
         }
     }
+
     public void addFood(int amount) {
         foodAmount += amount;
     }

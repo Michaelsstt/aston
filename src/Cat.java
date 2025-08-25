@@ -8,8 +8,8 @@ public class Cat extends Animal {
         catsCount++;
 
 
-
     }
+
     @Override
     public void run(int distance) {
         if (distance <= maxRunDistance) {
@@ -18,6 +18,7 @@ public class Cat extends Animal {
             System.out.println(getName() + " не может пробежать столько " + distance + " m.");
         }
     }
+
     @Override
     public void swim(int distance) {
         System.out.println(getName() + " не умеет плавать!");
@@ -36,11 +37,10 @@ public class Cat extends Animal {
     public static int totalCatsCount() {
         return catsCount;
     }
+
     public boolean isHungry() {
         return isHungry;
     }
-
-
 
 
 }
