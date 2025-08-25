@@ -38,8 +38,18 @@ public class PostmanEchoTest extends BaseApiTest {
 
     @Test
     void testPostFromData() {
-        given()
-                .spec(requestSpec)
-                .contentType("application/x-www-form-urlencoded; charset=utf-8");
+                        given()
+                            .spec(requestSpec)
+                            .contentType("application/x-www-form-urlencoded; charset=utf-8")
+                            .formParam("key1", "value1")
+                            .formParam("key2", "value2")
+                        .when()
+                            .post("/post")
+                        .then()
+                            .statusCode(200)
+                            .body("form.key1", equalTo("value1"))
+                            .body("form.key2", equalTo("value2"))
+                            .body("url", equalTo("https://postman-echo.com/post"));
+
     }
 }
