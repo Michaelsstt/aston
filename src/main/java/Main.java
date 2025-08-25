@@ -26,17 +26,16 @@ public class Main {
         int a = 5;
         int b = 4;
 
-        System.out.println("Сложение " + a + " + " + b + " = " + ArithmeticMethods.add(a,b));
-        System.out.println("Вычитание " + a + " - " + b + " = " + ArithmeticMethods.subtract(a,b));
-        System.out.println("Умножение " + a + " * " + b + " = " + ArithmeticMethods.multiply(a,b));
-        System.out.println("Деление " + a + " / " + b + " = " + ArithmeticMethods.divide(a,b));
+        System.out.println("Сложение " + a + " + " + b + " = " + ArithmeticMethods.add(a, b));
+        System.out.println("Вычитание " + a + " - " + b + " = " + ArithmeticMethods.subtract(a, b));
+        System.out.println("Умножение " + a + " * " + b + " = " + ArithmeticMethods.multiply(a, b));
+        System.out.println("Деление " + a + " / " + b + " = " + ArithmeticMethods.divide(a, b));
 
         //сравнение двух целых числа
         int q = 8;
         int w = 6;
-        NumberCompare.compareNumbers(q,w);
+        NumberCompare.compareNumbers(q, w);
     }
-
 
 
 }

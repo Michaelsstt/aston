@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ArithmeticMethodsTest {
@@ -24,6 +25,7 @@ public class ArithmeticMethodsTest {
     void testSubtract(int a, int b, int expected) {
         assertEquals(expected, ArithmeticMethods.subtract(a, b));
     }
+
     @ParameterizedTest
     @CsvSource({
             "4, 5, 20",
@@ -34,6 +36,7 @@ public class ArithmeticMethodsTest {
     void testMultiply(int a, int b, int expected) {
         assertEquals(expected, ArithmeticMethods.multiply(a, b));
     }
+
     @ParameterizedTest
     @CsvSource({
             "10, 2, 5",
@@ -44,6 +47,7 @@ public class ArithmeticMethodsTest {
     void testDivide(int a, int b, int expected) {
         assertEquals(expected, ArithmeticMethods.divide(a, b));
     }
+
     @Test
     void testDivideByZero() {
         assertThrows(ArithmeticException.class, () -> {
