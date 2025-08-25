@@ -12,7 +12,7 @@ public class TelephoneDirectory {
         directory.get(name).add(number);
     }
 
-    public List<String> get (String name) {
+    public List<String> get(String name) {
         return directory.getOrDefault(name, Collections.emptyList());
     }
 }
