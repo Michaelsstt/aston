@@ -2,7 +2,6 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
-import org.testng.annotations.BeforeClass;
 import org.junit.jupiter.api.BeforeAll;
 
 public class BaseApiTest {

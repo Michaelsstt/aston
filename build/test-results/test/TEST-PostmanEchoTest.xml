@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PostmanEchoTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-08-26T07:53:51.649Z" hostname="DESKTOP-GFS4JKK" time="6.404">
+  <properties/>
+  <testcase name="testDeleteRequest()" classname="PostmanEchoTest" time="2.564"/>
+  <testcase name="testPatchRequest()" classname="PostmanEchoTest" time="0.794"/>
+  <testcase name="testPutRequest()" classname="PostmanEchoTest" time="0.749"/>
+  <testcase name="testPostRawText()" classname="PostmanEchoTest" time="0.77"/>
+  <testcase name="testPostFormData()" classname="PostmanEchoTest" time="0.798"/>
+  <testcase name="testGetRequest()" classname="PostmanEchoTest" time="0.728"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
