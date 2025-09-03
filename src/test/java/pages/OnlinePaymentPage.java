@@ -45,7 +45,7 @@ public class OnlinePaymentPage extends BasePage {
         acceptCookiesIfPresent();
     }
 
-    public void openPaymentsSection() { // Открываем нужный раздел
+    public void openPaymentsSection() {
         scrollToElement(servicesTab);
         clickElement(servicesTab);
     }
