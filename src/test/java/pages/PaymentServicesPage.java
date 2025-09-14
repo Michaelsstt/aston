@@ -58,6 +58,9 @@ public class PaymentServicesPage extends BasePage {
     @FindBy(how = How.XPATH, using = "//input[@placeholder='E-mail для отправки чека']")
     private WebElement emailInput;
 
+    @FindBy(how = How.XPATH, using = "//input[@class='email'and@id='internet-email']")
+    private WebElement internetEmailInput;
+
     @FindBy(how = How.XPATH, using = "//input[@id='instalment-email'and@placeholder='E-mail для отправки чека']")
     private WebElement emailInstalmentInput;
 
@@ -133,6 +136,10 @@ public class PaymentServicesPage extends BasePage {
 
     public String getEmailPlaceholder() {
         return getElementPlaceholder(emailInput);
+    }
+
+    public String getInternetEmailInput() {
+        return getElementPlaceholder(internetEmailInput);
     }
 
     public String getEmailInstalmentPlaceholder() {

@@ -1,0 +1,9 @@
+allure:
+  report:
+    language: ru
+  issue:
+    tracker:
+      pattern: https://example.com/issue/%s
+  tms:
+    tracker:
+      pattern: https://example.com/tms/%s

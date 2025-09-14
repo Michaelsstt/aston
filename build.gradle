@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'io.qameta.allure' version '2.11.2'
 }
 
 group 'com.mts.tests'
@@ -24,12 +25,28 @@ dependencies {
     implementation 'org.slf4j:slf4j-simple:2.0.9'
 
     // Allure Spock adapter
-    testImplementation(platform("io.qameta.allure:allure-bom:2.24.0"))
-    testImplementation("io.qameta.allure:allure-spock2")
-    testImplementation("io.qameta.allure:allure-junit-platform")
+    testImplementation 'io.qameta.allure:allure-junit5:2.24.0'
+    testImplementation 'io.qameta.allure:allure-selenide:2.24.0'
+    testImplementation 'io.qameta.allure:allure-assertj:2.24.0'
 }
 test {
     useJUnitPlatform()
+    systemProperty 'allure.results.directory', 'build/allure-results'
+    systemProperty 'allure.link.issue.pattern', 'https://example.com/issue/{}'
+    systemProperty 'allure.link.tms.pattern', 'https://example.com/tms/{}'
+
+    // Включить логирование
+    testLogging {
+        events "passed", "skipped", "failed"
+        showStandardStreams = true
+    }
+}
+allure {
+    version = '2.24.0'
+    autoconfigure = true
+    useJUnit5 {
+        version = '2.24.0'
+    }
 }
 application {
     mainClass = 'Main'
